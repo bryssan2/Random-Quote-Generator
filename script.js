@@ -3,7 +3,7 @@ let authorName = document.getElementById("authorName");
 let GetQuoteBtn = document.getElementById("GetQuoteBtn");
 let loader = document.getElementById("loader");
 
-async function fecthQuote() {
+async function fetchQuote() {
   authorName.innerHTML = "";
   quote.innerHTML = "";
   loader.style.display = "block";
@@ -33,4 +33,4 @@ async function fecthQuote() {
     loader.style.display = "none";
   }
 }
-GetQuoteBtn.addEventListener("click", fecthQuote);
+GetQuoteBtn.addEventListener("click", fetchQuote);
